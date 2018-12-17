@@ -82,7 +82,7 @@ The Connector service (CS) is deployed as a central component:
 1. Generate client (`client.crt`) certificate for `test-application` using Connector Service.
 1. Access the cluster using the generated `client.crt`
     ```
-    curl  https://gateway.{CLUSTER_DOMAIN}/test-application/v1/metadata/services --cert client.crt --key client.key
+    curl https://gateway.{CLUSTER_DOMAIN}/test-application/v1/metadata/services --cert client.crt --key client.key
     ```
 1. Generate intermediate CA singed with the root CA
     ```
@@ -115,5 +115,5 @@ The Connector service (CS) is deployed as a central component:
     ```
 1. Wait for pod to restart and then access the cluster using previously generated `client.crt`
     ```
-    curl  https://gateway.{CLUSTER_DOMAIN}/test-application/v1/metadata/services --cert client.crt --key client.key
+    curl https://gateway.{CLUSTER_DOMAIN}/test-application/v1/metadata/services --cert client.crt --key client.key
     ```
